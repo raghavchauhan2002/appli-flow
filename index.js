@@ -21,12 +21,17 @@ const contactsFile = path.join(__dirname, 'data', 'contacts.json');
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
+    // 🔍 Debugging
+    console.log('Username received:', username);
+    console.log('Password received:', password);
+
     if (username === 'admin' && password === 'admin123') {
         res.redirect('/dashboard');
     } else {
         res.send('❌ Invalid credentials. Please try again.');
     }
 });
+
 
 // ====================================
 // 📊 DASHBOARD
