@@ -1,0 +1,16 @@
+<form action="/submit-company" method="POST">
+  <label>Company Name:</label><br>
+  <input type="text" name="name" required><br><br>
+
+  <label>Website:</label><br>
+  <input type="text" name="website" required><br><br>
+
+  <label>Funding Stage:</label><br>
+  <select name="funding_stage" required>
+    <option value="Seed">Seed</option>
+    <option value="Series A">Series A</option>
+    <option value="Series B">Series B</option>
+  </select><br><br>
+
+  <button type="submit">Submit Company</button>
+</form>
